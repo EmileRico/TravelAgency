@@ -149,7 +149,8 @@ export default function Home() {
                 Découvrir nos destinations
                 <ArrowRight className="w-4 h-4" />
               </Link>
-              <button className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gold/50 text-gold font-body font-medium tracking-wide hover:border-gold hover:bg-gold/5 transition-all duration-300">
+              <button className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gold/50 text-gold font-body font-medium tracking-wide hover:border-gold hover:bg-gold/5 transition-all duration-300"
+                onClick={() => document.dispatchEvent(new CustomEvent('open-chatbot'))}>
                 <MessageCircle className="w-4 h-4" />
                 Parler à Chronos
               </button>
@@ -310,7 +311,8 @@ export default function Home() {
                 Trouver ma destination
                 <ArrowRight className="w-4 h-4" />
               </Link>
-              <button className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gold/50 text-gold font-body font-medium tracking-wide hover:border-gold hover:bg-gold/5 transition-all duration-300">
+              <button className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gold/50 text-gold font-body font-medium tracking-wide hover:border-gold hover:bg-gold/5 transition-all duration-300"
+                onClick={() => document.dispatchEvent(new CustomEvent('open-chatbot'))}>
                 <MessageCircle className="w-4 h-4" />
                 Parler à Chronos
               </button>

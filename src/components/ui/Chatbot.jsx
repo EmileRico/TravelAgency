@@ -103,6 +103,12 @@ export default function Chatbot() {
   }, [messages, isLoading])
 
   useEffect(() => {
+    const handler = () => setIsOpen(true)
+    document.addEventListener('open-chatbot', handler)
+    return () => document.removeEventListener('open-chatbot', handler)
+  }, [])
+
+  useEffect(() => {
     if (isOpen) {
       const t = setTimeout(() => inputRef.current?.focus(), 320)
       return () => clearTimeout(t)
