@@ -1,3 +1,7 @@
+import parisImg from '../assets/PARIS IMAGE/exactly.ai_FluxDev_Paris1889CinematicTravelPhotographyLuxuryCampaign_2025-12-09_10-42.jpeg'
+import cretaceImg from '../assets/CRETACE IMAGE/exactly.ai_FluxDev_CretaceousPeriodCinematicTravelPhotographyLuxury_2025-12-09_10-42 (1).jpeg'
+import florenceImg from '../assets/FLORENCE IMAGE/exactly.ai_FluxDev_RenaissanceFlorenceCinematicTravelPhotography_2025-12-09_10-38.jpeg'
+
 export const DIFFICULTY = {
   ACCESSIBLE: { label: 'Accessible', colorClass: 'text-emerald-400 border-emerald-400/50' },
   CULTURAL:   { label: 'Culturel',   colorClass: 'text-amber-400 border-amber-400/50' },
@@ -23,8 +27,7 @@ export const destinations = [
     priceValue: 12500,
     difficulty: DIFFICULTY.ACCESSIBLE,
     color: '#c9a84c',
-    image:
-      'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80',
+    image: parisImg,
     coordinates: "48°51'N, 2°21'E — 1889",
   },
   {
@@ -45,8 +48,7 @@ export const destinations = [
     priceValue: 28000,
     difficulty: DIFFICULTY.ADVENTURE,
     color: '#4a7c59',
-    image:
-      'https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=800&q=80',
+    image: cretaceImg,
     coordinates: 'Pangée — 65 000 000 BP',
   },
   {
@@ -67,8 +69,7 @@ export const destinations = [
     priceValue: 15000,
     difficulty: DIFFICULTY.CULTURAL,
     color: '#8b5e3c',
-    image:
-      'https://images.unsplash.com/photo-1534445867742-43195f401b6c?w=800&q=80',
+    image: florenceImg,
     coordinates: "43°46'N, 11°15'E — 1504",
   },
 ]

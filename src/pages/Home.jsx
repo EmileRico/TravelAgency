@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ArrowRight, Shield, Users, Gem, MessageCircle } from 'lucide-react'
 import { useMemo } from 'react'
+import heroVideo from '../assets/VIDEO FINALE.mp4'
 import { destinations } from '../data/destinations'
 import { fadeInUp, containerVariants } from '../lib/animations'
 import DestinationCard from '../components/ui/DestinationCard'
@@ -84,6 +85,14 @@ export default function Home() {
       {/* ── Hero ── */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-deep via-dark to-card" />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          src={heroVideo}
+        />
         <StarField />
 
         {/* Grille décorative */}
