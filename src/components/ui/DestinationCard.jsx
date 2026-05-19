@@ -15,7 +15,7 @@ export default function DestinationCard({ destination }) {
       transition={{ type: 'spring', stiffness: 300 }}
       className="group relative bg-card border border-subtle overflow-hidden"
     >
-      <Link to="/destinations">
+      <Link to={`/destination/${destination.id}`}>
         <div className="relative h-56 overflow-hidden">
           <img
             src={destination.image}

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Calendar, Clock, ChevronRight, TrendingUp } from 'lucide-react'
 import { destinations } from '../data/destinations'
@@ -134,10 +135,13 @@ export default function Destinations() {
                       <p className="font-mono text-xs text-muted">Prix par personne</p>
                       <p className="font-display text-3xl text-gold">{destination.price}</p>
                     </div>
-                    <button className="flex items-center gap-2 px-6 py-3 bg-gold text-deep font-body font-semibold text-sm tracking-wide hover:bg-gold-light transition-colors duration-300">
-                      Réserver
+                    <Link
+                      to={`/destination/${destination.id}`}
+                      className="flex items-center gap-2 px-6 py-3 bg-gold text-deep font-body font-semibold text-sm tracking-wide hover:bg-gold-light transition-colors duration-300"
+                    >
+                      Découvrir
                       <TrendingUp className="w-4 h-4" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

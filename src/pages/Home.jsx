@@ -304,10 +304,10 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/destinations"
+                to="/quiz"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold text-deep font-body font-semibold tracking-wide hover:bg-gold-light transition-colors duration-300"
               >
-                Commencer l'aventure
+                Trouver ma destination
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <button className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-gold/50 text-gold font-body font-medium tracking-wide hover:border-gold hover:bg-gold/5 transition-all duration-300">
