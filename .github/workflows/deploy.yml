@@ -25,6 +25,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          VITE_APP_NAME: ${{ vars.VITE_APP_NAME }}
+          VITE_MISTRAL_API_KEY: ${{ secrets.VITE_MISTRAL_API_KEY }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
