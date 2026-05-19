@@ -46,7 +46,7 @@ export const destinations = [
     difficulty: DIFFICULTY.ADVENTURE,
     color: '#4a7c59',
     image:
-      'https://images.unsplash.com/photo-1608348720696-d7e47edd1ef5?w=800&q=80',
+      'https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=800&q=80',
     coordinates: 'Pangée — 65 000 000 BP',
   },
   {
@@ -68,7 +68,7 @@ export const destinations = [
     difficulty: DIFFICULTY.CULTURAL,
     color: '#8b5e3c',
     image:
-      'https://images.unsplash.com/photo-1541370976299-4d24be63e9d1?w=800&q=80',
+      'https://images.unsplash.com/photo-1534445867742-43195f401b6c?w=800&q=80',
     coordinates: "43°46'N, 11°15'E — 1504",
   },
 ]
